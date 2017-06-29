@@ -62,9 +62,11 @@ export function doRegister(req,res){
 
 export function loginState(req,res){
   if(req.session.user){
+    console.log(req.session.user);
     return res.send({
       user:{
-        username:req.session.user.username
+        username:req.session.user.username,
+        id:req.session.user.id
       }
     })
   }
