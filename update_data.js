@@ -1,5 +1,5 @@
 import fs from 'fs'
-import db from './model/db.js'
+import * as db from './model/db.js'
 
 function writeLog(info){
   let time=new Date()
